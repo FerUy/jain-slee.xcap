@@ -10,7 +10,7 @@
 
 	<groupId>org.mobicents.servers.jainslee.xcap</groupId>
 	<artifactId>restcomm-slee-xcap</artifactId>
-	<version>7.0.0-SNAPSHOT</version>
+	<version>7.2.0-SNAPSHOT</version>
 
 	<packaging>pom</packaging>
 
@@ -27,7 +27,25 @@
 
 	<properties>
 		<restcomm.resources.sip11.version>7.1.28</restcomm.resources.sip11.version>
+		<compiler.plugin.version>3.8.1</compiler.plugin.version>
+		<compile.source>11</compile.source>
 	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${compiler.plugin.version}</version>
+				<configuration>
+					<source>${compile.source}</source>
+					<target>${compile.source}</target>
+					<debug>${compile.debug}</debug>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
 
 	<profiles>
 		<profile>

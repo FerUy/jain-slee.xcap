@@ -20,5 +20,5 @@
  * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
  */
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "urn:ietf:params:xml:ns:xcap-diff", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED)
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "urn:ietf:params:xml:ns:xcap-diff", elementFormDefault = jakarta.xml.bind.annotation.XmlNsForm.QUALIFIED)
 package org.restcomm.slee.enabler.xdmc.jaxb.xcapdiff;
